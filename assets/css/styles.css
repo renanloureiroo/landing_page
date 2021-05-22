@@ -19,6 +19,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 2rem;
   color: var(--primary-color);
+  line-height: 1.5;
 }
 
 h1,
@@ -35,12 +36,8 @@ h1 {
   text-transform: uppercase;
 }
 
-h1 {
-  font-size: 6rem;
-  text-transform: uppercase;
-}
-
 h2 {
+  text-transform: uppercase;
   font-size: 5.5rem;
 }
 
@@ -91,6 +88,10 @@ a {
   min-height: 100vh;
 }
 
+.menu-spacing {
+  height: 6.5rem;
+}
+
 .menu {
   position: fixed;
   width: 100%;
@@ -136,4 +137,40 @@ a {
 .menu ul li a:hover::after {
   width: 50%;
   left: 25%;
+}
+
+.home-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--gap);
+  height: 100vh;
+}
+
+.home-text,
+.home-img {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+.home-text > h2 {
+  line-height: 1.1;
+  margin-bottom: var(--gap);
+}
+
+.intro-content {
+  height: 100vh;
+}
+
+.intro-text {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 60rem;
+  height: 100%;
+  text-align: center;
+}
+.intro-text h2,
+.intro-text p {
+  padding: var(--gap);
 }
